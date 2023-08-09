@@ -1,6 +1,12 @@
+const styles = {
+  content: {
+      padding: "10em"
+  }
+}
+
 export default function PortfolioPage() {
     return (
-        <div className="row row-cols-1 row-cols-md-2 g-4">
+        <div className="portfolio-section row row-cols-1 row-cols-md-2 g-4" style={styles.content}>
   <div className="col">
     <div className="card">
       <img src="..." className="card-img-top" alt="..."/>

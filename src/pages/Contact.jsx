@@ -1,6 +1,12 @@
+const styles = {
+    content: {
+        padding: "19em"
+    }
+}
+
 export default function Contact() {
     return (
-        <div>
+        <div className="contact" style={styles.content}>
    <h1>Get In Touch With Me</h1>
         <h4>Email: </h4>
         <h4>GitHub:</h4>
