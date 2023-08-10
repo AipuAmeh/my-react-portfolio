@@ -2,23 +2,26 @@ import { Link, useLocation } from 'react-router-dom'
 
 const styles = {
     nav: {
+      width: "100%"
+    },
+    navList: {
       display: "flex",
       justifyContent: "space-between",
       width: "100%"
-    },
+    }
     }
 
 function Nav() {
     const currentPage = useLocation().pathname
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary p-5">
+        <nav  className="navbar navbar-expand-lg bg-body-tertiary p-5" style={styles.nav}>
         <div className="container-fluid">
           <Link className="navbar-brand">
             Aipu Ameh
           </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav" style={styles.nav}>
+            <ul className="navbar-nav" style={styles.navList}>
               
               <li className="nav-item">
                 <Link 
