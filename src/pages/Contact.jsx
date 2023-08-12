@@ -16,6 +16,7 @@ export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [touched, setTouched] = useState(false);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -26,11 +27,6 @@ export default function ContactForm() {
         return 
     }
    
-
-    if (!name && !email && !message) {
-        alert(`Please complete your message`);
-        
-    }
     alert(`Thank you for your submission ${name}`);
     setName("");
     setEmail("");
@@ -55,7 +51,9 @@ export default function ContactForm() {
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          onBlur={() => setTouched(true)}
         ></input>
+        {touched ? (name !== '' ? null : "Required Field"): null}
       </div>
 
       <div className="mb-3" style={styles.form}>
@@ -65,7 +63,9 @@ export default function ContactForm() {
           placeholder="Email Address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          onBlur={() => setTouched(true)}
         ></input>
+         {touched ? (email !== '' ? null : "Required Field"): null}
       </div>
 
       <div className="mb-3" style={styles.form}>
@@ -75,7 +75,9 @@ export default function ContactForm() {
           placeholder="Leave Me a Message!"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          onBlur={() => setTouched(true)}
         ></textarea>
+         {touched ? (message !== '' ? null : "Required Field"): null}
       </div>
 
       <button type="submit" id="send-message">
