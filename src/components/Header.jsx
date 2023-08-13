@@ -5,7 +5,7 @@ import Nav from './Navigation';
 
 function Header() {
   return (
-    <header >
+    <header className='main-header' >
       <Nav />
     </header>
   );

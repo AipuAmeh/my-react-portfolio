@@ -7,7 +7,7 @@ const styles = {
     navList: {
       display: "flex",
       justifyContent: "space-between",
-      width: "100%"
+      width: "100%",
     }
     }
 
@@ -15,7 +15,7 @@ function Nav() {
     const currentPage = useLocation().pathname
 
     return (
-        <nav  className="navbar navbar-expand-lg bg-body-tertiary p-5" style={styles.nav}>
+        <nav  className="navbar navbar-expand-lg p-5" style={styles.nav}>
         <div className="container-fluid">
           <Link className="navbar-brand">
             Aipu Ameh
