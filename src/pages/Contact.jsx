@@ -4,12 +4,9 @@ import { validateEmail } from "../utils/validate";
 
 const styles = {
   content: {
-    padding: "12em",
+    paddingBottom: "10em",
   },
-  form: {
-    // display: '',
-    // float: 'left'
-  }
+
 };
 
 export default function ContactForm() {
@@ -38,15 +35,16 @@ export default function ContactForm() {
 
   return (
     <form
-      className="contact-form"
+      className="contact-form form-container container-sm"
       style={styles.content}
       onSubmit={handleFormSubmit}
     >
-      <div className="mb-3" style={styles.form}>
-        <label className="form-label p-2">
-          Your Name: 
+       <h2 className="contact-title mt-5">Stay In Touch!</h2>
+      <div >   
+        <label className="form-label">
+          Your Name 
         </label>
-        <input
+        <input className="contact-form input"
           type="text"
           placeholder="Name"
           value={name}
@@ -56,9 +54,9 @@ export default function ContactForm() {
         {touched ? (name !== '' ? null : "Required Field"): null}
       </div>
 
-      <div className="mb-3" style={styles.form}>
-        <label className="form-label p-2">Your Email Address: </label>
-        <input
+      <div className="mb-3 pt-2" style={styles.form}>
+        <label className="form-label ">Your Email Address </label>
+        <input className="contact-form input"
           type="email"
           placeholder="Email Address"
           value={email}
@@ -69,8 +67,8 @@ export default function ContactForm() {
       </div>
 
       <div className="mb-3" style={styles.form}>
-        <label className="form-label p-2">Your Message: </label>
-        <textarea
+        <label className="form-label">Your Message </label>
+        <textarea className="contact-form message-input"
           type="text"
           placeholder="Leave Me a Message!"
           value={message}
@@ -80,7 +78,7 @@ export default function ContactForm() {
          {touched ? (message !== '' ? null : "Required Field"): null}
       </div>
 
-      <button type="submit" id="send-message">
+      <button type="submit" className="send-message">
         Send Message
       </button>
     </form>

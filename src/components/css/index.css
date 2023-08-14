@@ -27,13 +27,78 @@ footer {
 
 .social-sites {
     border: solid;
-    border-color: #BC8034 ;
+    border-color: #BC8034;
     padding: 1.5em;
 }
 
 .footer-list {
     margin: auto 2em;
 }
-/* .social-sites, Link: {
-color: black;
+
+.card {
+    background-color:#D9CAB3;
+}
+
+.portfolio-section {
+    border: solid black;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 12px 2em;
+    box-sizing: border-box;
+}
+.form-container {
+    width: auto;
+    text-align: center;
+}
+
+.form-label {
+    padding: 1;
+    float:left;
+    
+}
+
+.contact-title {
+    padding-bottom: 5px;
+}
+
+.message-input {
+    padding: 2em;
+}
+
+.send-message {
+    background-color: #8C7A6B;
+}
+
+.skills-list {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+.resume-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.resume-link:hover {
+    color: #BC8034;
+}
+
+#deployed-link, #github-link {
+    color: black;
+    text-decoration: none;
+}
+
+#deployed-link:hover {
+    color: #BC8034;
+}
+
+#github-link:hover {
+    color: #BC8034;
+}
+/* 
+@media screen {
+    
 } */
