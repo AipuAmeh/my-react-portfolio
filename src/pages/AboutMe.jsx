@@ -17,7 +17,7 @@ export default function AboutMeCard() {
       <h1>About Me</h1>
 
       <img
-        src="/src/assets/portfoliophoto.jpg"
+        src="images/portfoliophoto.jpg"
         className="headshot"
         alt="headshot photo"
         style={styles.headshot}
