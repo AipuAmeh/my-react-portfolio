@@ -9,9 +9,6 @@ const styles = {
   pageTitle: {
     paddingTop: "5em",
   },
-  // aboutMeText: {
-  //     margin: "3em 10em",
-  // }
 };
 
 export default function AboutMeCard() {
@@ -20,7 +17,7 @@ export default function AboutMeCard() {
       <h1>About Me</h1>
 
       <img
-        src="./src/assets/portfoliophoto.jpg"
+        src="/src/assets/portfoliophoto.jpg"
         className="headshot"
         alt="headshot photo"
         style={styles.headshot}
