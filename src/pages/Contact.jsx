@@ -34,8 +34,9 @@ export default function ContactForm() {
   };
 
   return (
+    <div className="container form-container">
     <form
-      className="contact-form form-container container-sm"
+      className="contact-form form-control-lg"
       style={styles.content}
       onSubmit={handleFormSubmit}
     >
@@ -82,5 +83,7 @@ export default function ContactForm() {
         Send Message
       </button>
     </form>
+    </div>
+
   );
 }
