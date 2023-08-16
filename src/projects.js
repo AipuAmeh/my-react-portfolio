@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "Bookipedia",
-        imageSrc: '/src/assets/bookipedia.png',
+        imageSrc: '/images/bookipedia.png',
         deployedLink: 'https://obelisk477.github.io/bookipedia/',
         gitHub: 'https://github.com/obelisk477/bookipedia',
         altText: 'bookipedia homepage'
