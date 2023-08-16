@@ -4,8 +4,8 @@ import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
 
 
-
 import './App.css'
+import './components/css/index.css'
 
 function App() {
 

@@ -1,26 +1,14 @@
 import { Link } from "react-router-dom";
 import projects from "../projects";
 
-const styles = {
-  content: {
-    padding: "2em",
-    display: "flex",
-    flexFlow: "column wrap",
-  },
-  cards: {
-    // flexDirection: "row"
-  },
-};
 const projectCards = projects.map((project, index) => {
-  console.log(project);
   return (
     <div
       key={index}
-      className="portfolio-section row row-cols-1 row-cols-md-3 g-4 table-responsive"
-      style={styles.content}
-    >
-      <div className="card-group" style={styles.cards}>
-        <div className="card">
+      className="portfolio-section col-md-6 col-sm-6 g-4 table-responsive"
+    > 
+      <div className="card-group" id='project-cards'>
+        <div className="card mb-3">
           <img
             src={project.imageSrc}
             className="card-img-top"
@@ -29,7 +17,8 @@ const projectCards = projects.map((project, index) => {
           <div className="card-body">
             <h5 className="card-title">{project.name}</h5>
             
-            <Link to={project.deployedLink} id="deployed-link">
+            <Link 
+            to={project.deployedLink} id="deployed-link">
               View My Deployed Site! 
             </Link>
           {'\n'}
@@ -39,6 +28,7 @@ const projectCards = projects.map((project, index) => {
             </Link>
           </div>
         </div>
+        
       </div>
     </div>
   );
@@ -46,5 +36,5 @@ const projectCards = projects.map((project, index) => {
 
 export default function Project() {
 
-  return <div>{projectCards}</div>;
+  return <div className="row ">{projectCards}</div>;
 }
