@@ -40,6 +40,13 @@ const projects = [
         deployedLink: 'https://aipuameh.github.io/daily-scheduler/',
         gitHub: 'https://github.com/AipuAmeh/daily-scheduler',
         altText: 'daily scheduler'
+    },
+    {
+        name: "Eugenie",
+        imageSrc: '/images/eugenie.png',
+        deployedLink: 'https://pregnant-genie-619af0388864.herokuapp.com/',
+        gitHub: 'https://github.com/obelisk477/eugenie',
+        altText: 'eugenie'
     }
 ];
 
