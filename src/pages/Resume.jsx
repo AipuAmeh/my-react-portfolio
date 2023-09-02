@@ -23,7 +23,7 @@ const styles = {
             </ul>
             <Link 
             className='resume-link'
-            to='https://drive.google.com/file/d/1BqC2-vB2nL7_sBQh2vxpqZwbUQOA8Zj3/view?usp=sharing'>Click Here to View My Full Resume</Link>
+            to='https://drive.google.com/file/d/1oSrkXJgvo31sC6A81yzcFbNyI9fJA6n1/view?usp=drive_link'>Click Here to View My Full Resume</Link>
         </div>
     )
  }
