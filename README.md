@@ -6,7 +6,7 @@ This week's challenge was to create a single-page application portfolio using Re
 
 ## Installation
 
-Link to Deployed Netlify App: https://idyllic-yeot-e7f79b.netlify.app/
+[Link to Deployed Netlify App](https://idyllic-yeot-e7f79b.netlify.app/)
 
 React Plugins needed for this application:
 
