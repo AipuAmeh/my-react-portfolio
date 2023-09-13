@@ -22,7 +22,7 @@ const projects = [
     },
     {
         name: "Fashion Quiz",
-        imageSrc: '/images/fashionquiz2.png',
+        imageSrc: '/images/fashionquiz3.png',
         deployedLink: 'https://aipuameh.github.io/coding-quiz/',
         gitHub: 'https://github.com/AipuAmeh/coding-quiz',
         altText: 'fashion quiz homepage'
