@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { validateEmail } from "../utils/validate";
+import emailjs from '@emailjs/browser';
+// import { init } from 'emailjs-com'
+// init('IkgqTH2Np5vQFNJZz');
 
 
 const styles = {
@@ -13,23 +16,43 @@ export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
   const [touched, setTouched] = useState(false);
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-        
+  const  handleFormSubmit = (e) => {
+    e.preventDefault();      
     if (!validateEmail(email)) {
         alert(`Please enter a valid email`)
         return 
     }
-   
-    alert(`Thank you for your submission ${name}`);
+   if (name && email && message) {
+
+    const templateId = "template_7mt3gdj";
+    const serviceId = "service_p2a62m8"
+    const publicKey = 'IkgqTH2Np5vQFNJZz';
+    const templateParams = {
+     name, 
+     email,
+     message
+    };
+
+  emailjs.send(serviceId, templateId, templateParams, publicKey)
+  .then((result) => {
+    console.log(result);
+  },
+  (error) => {
+    console.log(error.text)
+  });
+
+    alert(`Your message has been sent, ${name}`);
     setName("");
     setEmail("");
     setMessage("");
-    
-
+    setEmailSent(true);
+    setTouched(false);
+   } else {
+    console.log('this does not work');
+   }
 
   };
 
@@ -77,9 +100,10 @@ export default function ContactForm() {
           onBlur={() => setTouched(true)}
         ></textarea>
          {touched ? (message !== '' ? null : "Required Field"): null}
+         <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch!</span>
       </div>
 
-      <button type="submit" className="send-message">
+      <button onClick={handleFormSubmit} type="submit" className="send-message">
         Send Message
       </button>
     </form>
