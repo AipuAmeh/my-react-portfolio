@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { validateEmail } from "../utils/validate";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 // import { init } from 'emailjs-com'
-// init('IkgqTH2Np5vQFNJZz')
+// init('IkgqTH2Np5vQFNJZz');
 
 
 const styles = {
@@ -27,8 +27,8 @@ export default function ContactForm() {
     }
    if (name && email && message) {
 
-    const templateId = 'template_7mt3gdj';
-    const serviceId = 'service_k24xo1c';
+    const templateId = "template_7mt3gdj";
+    const serviceId = "service_p2a62m8"
     const publicKey = 'IkgqTH2Np5vQFNJZz';
     const templateParams = {
      name, 
@@ -36,9 +36,13 @@ export default function ContactForm() {
      message
     };
 
-  emailjs.send(templateId, serviceId, templateParams, publicKey)
-    .then(response => console.log(response))
-    .then(error => console.log(error));
+  emailjs.send(serviceId, templateId, templateParams, publicKey)
+  .then((result) => {
+    console.log(result);
+  },
+  (error) => {
+    console.log(error.text)
+  });
 
     alert(`Your message has been sent, ${name}`);
     setName("");
