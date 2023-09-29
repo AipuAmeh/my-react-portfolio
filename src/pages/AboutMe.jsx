@@ -1,20 +1,29 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 const styles = {
-  content: {
-    paddingBottom: "15em",
+  headshot: { 
+    maxWidth: "100%",
+    paddingTop: '3em'
   },
-  headshot: {
-    maxWidth: "25%",
-    padding: "0",
-  },
-  pageTitle: {
-    paddingTop: "5em",
-  },
+title: {
+  display: 'flex',
+  justifyContent: 'flex-start'
+},
+bio: {
+  position: 'relative'
+}
+
 };
 
 export default function AboutMeCard() {
   return (
-    <div className="about-me-section mt-5" style={styles.content}>
-      <h1>About Me</h1>
+    <Container>
+      <Row >
+      <Col className="about-me-section mt-5" style={styles.content} lg={6}>
+      <h1 style={styles.title}>About Me</h1>
 
       <img
         src="images/portfoliophoto.jpg"
@@ -22,15 +31,25 @@ export default function AboutMeCard() {
         alt="headshot photo"
         style={styles.headshot}
       ></img>
-      <div className="container-sm p-5">
-        <p className="text-start content mt-3" style={styles.aboutMeText}>       
+
+    </Col>
+    <Col className="container-sm p-5" >
+        <p className="text-start content mt-3" style={styles.bio}>
           My name is Aipu Ameh. I am a Full Stack Web Developer with a focus on
-          visionary technology. As an avid learner, I use my experiences from
-          various roles that I have held to fuel my life, both personally and
-          professionally. When I am not working, I enjoy spending time with
-          friends and family, traveling, and self-care activities.
+          visionary technology. I have extensive knowledge in test-centered
+          design with JavaScript, as well as utilizing HTML and CSS to
+          manipulate data effectively. My prior experience in UX/UI design has
+          aided my passions for creating a website that is user-centered,
+          consistent, and fully accessible. When it comes to successful
+          websites, I understand the best practices of Search Engine
+          Optimization (SEO) and responsive web design, especially using
+          JavaScript frameworks like React.
         </p>
-      </div>
-    </div>
+      </Col>
+      </Row>
+  
+ 
+    </Container>
+
   );
 }

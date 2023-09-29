@@ -9,6 +9,9 @@ const styles = {
     justifyContent: "space-between",
     width: "100%",
   },
+  brand: {
+    fontFamily:'cursive'
+  }
 };
 
 function Nav() {
@@ -17,7 +20,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg p-5" style={styles.nav}>
       <div className="container-fluid">
-        <Link className="navbar-brand">Aipu Ameh</Link>
+        <Link className="navbar-brand" style={styles.brand}>Aipu Ameh</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
