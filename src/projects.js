@@ -4,7 +4,8 @@ const projects = [
         imageSrc: '/images/bookipedia.png',
         deployedLink: 'https://obelisk477.github.io/bookipedia/',
         gitHub: 'https://github.com/obelisk477/bookipedia',
-        altText: 'bookipedia homepage'
+        altText: 'bookipedia homepage',
+        description: ''
     },
     {
         name: 'Hype-Hub',

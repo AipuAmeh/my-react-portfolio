@@ -16,16 +16,15 @@ const projectCards = projects.map((project, index) => {
           />
           <div className="card-body">
             <h5 className="card-title">{project.name}</h5>
-            
-            <Link 
+            <p>   <Link 
             to={project.deployedLink} id="deployed-link">
-              View My Deployed Site! 
-            </Link>
-          {'\n'}
-            <Link to={project.gitHub}
+              Deployed Site 
+            </Link></p>
+          <p> <Link to={project.gitHub}
             id="github-link">
-              View My Repository!
-            </Link>
+              Repository
+            </Link></p>
+        
           </div>
         </div>
         

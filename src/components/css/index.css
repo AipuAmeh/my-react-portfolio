@@ -1,11 +1,20 @@
+.navbar-nav .nav-link.active{
+    color: #CCC5B9;
+}
 
 .navbar {
-    background-color: #BC8034;
+    background-color: #403D39;
+    color: white;
 }
 
 .navbar-brand {
     font-weight: 850;
     font-size: 3em;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: #CCC5B9;
 }
 
 .nav-item {
@@ -13,34 +22,46 @@
     font-size: 1.5em;
 }
 
-.nav-item:hover{
-    background-color: #D9CAB3;
+.nav-link {
+    color: white;
+}
+.nav-link:hover{
+    color: #CCC5B9;
 }
 
 .content {
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 2em;
 }
 
 footer {
-    background-color: #BC8034;
+    background-color: #403D39;
+    color: white;
 }
 
 .social-sites {
     border: solid;
-    border-color: #BC8034;
+    border-color: #403D39;
     padding: 1.5em;
+   
 }
 
 .footer-list {
     margin: auto 2em;
+    color: white;
 }
 
 .card {
-    background-color:#D9CAB3;
+    background-color:#403D39;
     width: auto;
     flex-wrap: wrap;
     border: solid #8C7A6B;
 }
+
+.card-body {
+    color: white;
+}
+
 
 .portfolio-section {
     display: flex;
@@ -92,15 +113,15 @@ footer {
 }
 
 #deployed-link, #github-link {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 #deployed-link:hover {
-    color: #BC8034;
+    color: #CCC5B9;
 }
 
 #github-link:hover {
-    color: #BC8034;
+    color: #CCC5B9;
 }
 

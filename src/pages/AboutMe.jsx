@@ -1,21 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// import Link from 'react-router-dom';
 
+import '../components/css/aboutme.css'
 
 const styles = {
   headshot: { 
     maxWidth: "100%",
-    paddingTop: '3em'
+    paddingBottom: "2em"
   },
 title: {
   display: 'flex',
   justifyContent: 'flex-start'
-},
-bio: {
-  position: 'relative'
 }
-
 };
 
 export default function AboutMeCard() {
@@ -23,7 +21,7 @@ export default function AboutMeCard() {
     <Container>
       <Row >
       <Col className="about-me-section mt-5" style={styles.content} lg={6}>
-      <h1 style={styles.title}>About Me</h1>
+      {/* <h1 style={styles.title}>Who Am I...</h1> */}
 
       <img
         src="images/portfoliophoto.jpg"
@@ -45,10 +43,10 @@ export default function AboutMeCard() {
           Optimization (SEO) and responsive web design, especially using
           JavaScript frameworks like React.
         </p>
+       <p>Email: 
+     <a className="links" href="mailto:aipuameh.16@gmail.com"> aipuameh.16@gmail.com</a></p>
       </Col>
       </Row>
-  
- 
     </Container>
 
   );
