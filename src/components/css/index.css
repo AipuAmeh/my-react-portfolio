@@ -51,26 +51,30 @@ footer {
     color: white;
 }
 
-.card {
-    background-color:#403D39;
-    width: auto;
-    flex-wrap: wrap;
-    border: solid #8C7A6B;
-}
-
-.card-body {
-    color: white;
-}
-
-
 .portfolio-section {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 2em;
+    width: 30rem;
 }
 
-
+.card-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    background-color:#403D39;
+    /* flex-wrap: wrap; */
+    border: solid #8C7A6B;
+}
+.card-body {
+    color: white;
+    line-height: 1em;
+}
 .contact-form {
     width: 100%;
-    padding: 12px 2em;
+    padding: 5px 2em;
     box-sizing: border-box;
     align-items: center;   
 }
@@ -78,6 +82,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: #403D39 solid 10px;
+    width: fit-content;
+    margin: 2em auto;
+
 }
 
 .form-label {
@@ -101,7 +109,6 @@ footer {
     list-style-type: none;
     font-size: 1.5em;
 }
-
 .resume-link {
     color: black;
     text-decoration: none;
@@ -109,12 +116,17 @@ footer {
 }
 
 .resume-link:hover {
-    color: #BC8034;
+    color: #8C7A6B;
+}
+
+#technologies {
+    font-weight: bold;
 }
 
 #deployed-link, #github-link {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #deployed-link:hover {
