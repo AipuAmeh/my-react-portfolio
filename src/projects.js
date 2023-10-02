@@ -5,7 +5,7 @@ const projects = [
         deployedLink: 'https://obelisk477.github.io/bookipedia/',
         gitHub: 'https://github.com/obelisk477/bookipedia',
         altText: 'bookipedia homepage',
-        description: 'A collaborative project that utilizes Google Books API to allow users to search for book.',
+        description: 'A collaborative project that utilizes Google Books API to allow users to search for books.',
         technologies: 'jQuery, Bulma, Wikipedia Api, Google Books API'
     },
     {
@@ -32,7 +32,7 @@ const projects = [
         deployedLink: 'https://aipuameh.github.io/coding-quiz/',
         gitHub: 'https://github.com/AipuAmeh/coding-quiz',
         altText: 'fashion quiz homepage',
-        description: 'An interactive game that consists of 4 timed questions. After the game, the player has the ability to save their initials and see previous scores.',
+        description: 'An interactive game that consists of 4 timed questions. After the game, players have the ability to save their initials and see previous scores.',
         technologies: 'JavaScript, HTML5, CSS'
     },
     {

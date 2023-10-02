@@ -8,7 +8,7 @@ import '../components/css/aboutme.css'
 const styles = {
   headshot: { 
     maxWidth: "100%",
-    paddingBottom: "2em"
+    paddingBottom: "2em",
   },
 title: {
   display: 'flex',

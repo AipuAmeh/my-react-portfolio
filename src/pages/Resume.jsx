@@ -20,6 +20,8 @@ const styles = {
                 <li>JQuery</li>
                 <li>MySQL/MongoDB</li>
                 <li>React</li>
+                <li>CSS Frameworks</li>
+                <li>JavaScript</li>
             </ul>
             <Link 
             className='resume-link'

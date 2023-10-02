@@ -66,7 +66,8 @@ footer {
 .card {
     background-color:#403D39;
     /* flex-wrap: wrap; */
-    border: solid #8C7A6B;
+    border: solid #403D39;
+    border-radius: 8%;
 }
 .card-body {
     color: white;
@@ -83,6 +84,7 @@ footer {
     justify-content: center;
     align-items: center;
     border: #403D39 solid 10px;
+    border-radius: 5%;
     width: fit-content;
     margin: 2em auto;
 
