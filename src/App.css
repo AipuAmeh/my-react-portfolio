@@ -2,7 +2,7 @@
   margin: 0 0;
   padding: 0 auto;
   text-align: center;
-  background-color: #D9CAB3;
+  background-color: #CCC5B9;
   
 }
 
@@ -43,5 +43,7 @@
 }
 
 .Header{
-  width:100%
+  width:100%;
+  
 }
+

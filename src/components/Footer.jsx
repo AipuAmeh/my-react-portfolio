@@ -7,7 +7,7 @@ const style = {
         justifyContent: "space-between"
     },
     link: {
-        color: "black",
+        color: "white",
         textDecoration: "none",
         fontSize: '1.25em'
     }
@@ -15,7 +15,7 @@ const style = {
 
 export default function Footer() {
     return (
-        <footer className="social-sites" >
+        <footer className="social-sites " >
             <ul className='footer-list' style={style.list}>
                 <li>
                 <Link

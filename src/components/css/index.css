@@ -1,11 +1,20 @@
+.navbar-nav .nav-link.active{
+    color: #CCC5B9;
+}
 
 .navbar {
-    background-color: #BC8034;
+    background-color: #403D39;
+    color: white;
 }
 
 .navbar-brand {
     font-weight: 850;
     font-size: 3em;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: #CCC5B9;
 }
 
 .nav-item {
@@ -13,43 +22,60 @@
     font-size: 1.5em;
 }
 
-.nav-item:hover{
-    background-color: #D9CAB3;
+.nav-link {
+    color: white;
+}
+.nav-link:hover{
+    color: #CCC5B9;
 }
 
 .content {
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 2em;
 }
 
 footer {
-    background-color: #BC8034;
+    background-color: #403D39;
+    color: white;
 }
 
 .social-sites {
     border: solid;
-    border-color: #BC8034;
+    border-color: #403D39;
     padding: 1.5em;
+   
 }
 
 .footer-list {
     margin: auto 2em;
-}
-
-.card {
-    background-color:#D9CAB3;
-    width: auto;
-    flex-wrap: wrap;
-    border: solid #8C7A6B;
+    color: white;
 }
 
 .portfolio-section {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 2em;
+    width: 30rem;
 }
 
-
+.card-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    background-color:#403D39;
+    /* flex-wrap: wrap; */
+    border: solid #403D39;
+    border-radius: 8%;
+}
+.card-body {
+    color: white;
+    line-height: 1em;
+}
 .contact-form {
     width: 100%;
-    padding: 12px 2em;
+    padding: 5px 2em;
     box-sizing: border-box;
     align-items: center;   
 }
@@ -57,6 +83,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: #403D39 solid 10px;
+    border-radius: 5%;
+    width: fit-content;
+    margin: 2em auto;
+
 }
 
 .form-label {
@@ -80,7 +111,6 @@ footer {
     list-style-type: none;
     font-size: 1.5em;
 }
-
 .resume-link {
     color: black;
     text-decoration: none;
@@ -88,19 +118,24 @@ footer {
 }
 
 .resume-link:hover {
-    color: #BC8034;
+    color: #8C7A6B;
+}
+
+#technologies {
+    font-weight: bold;
 }
 
 #deployed-link, #github-link {
-    color: black;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #deployed-link:hover {
-    color: #BC8034;
+    color: #CCC5B9;
 }
 
 #github-link:hover {
-    color: #BC8034;
+    color: #CCC5B9;
 }
 
