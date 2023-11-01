@@ -25,7 +25,7 @@ const styles = {
             </ul>
             <Link 
             className='resume-link'
-            to='https://drive.google.com/file/d/1yF1_WtU1odMKvUoKKCfV2b_YcAOljVSW/view?usp=sharing'>Click Here to View My Full Resume!</Link>
+            to='https://drive.google.com/file/d/1wBr1JqEOZ_9gLJ60fs9jPjURFsvT4cyB/view?usp=sharing'>Click Here to View My Full Resume!</Link>
         </div>
     )
  }
