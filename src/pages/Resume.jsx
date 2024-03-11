@@ -46,7 +46,7 @@ export default function Resume() {
       </div>
       <Link
         className="resume-link pb-5"
-        to="https://drive.google.com/file/d/1wBr1JqEOZ_9gLJ60fs9jPjURFsvT4cyB/view?usp=sharing"
+        to="https://drive.google.com/file/d/1W6RQTqWH4PkgcZIH4M_0jt01ane3iqhd/view?usp=sharing"
       >
         Click Here to View My Full Resume!
       </Link>
