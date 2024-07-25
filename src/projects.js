@@ -1,5 +1,14 @@
 const projects = [
     {
+        name: 'Fashion Academy',
+        imageSrc: '/images/fashion-academy.png',
+        deployedLink: 'https://aipua.sg-host.com/',
+        altText: 'Fashion Academy home page',       
+        description: 'Fashion Academy is an in-progress custom theme WordPress application for creatives to learn and view current fashion events.',
+        technologies: 'WordPress, PHP, jQuery, REST API'
+
+    },
+    {
         name: 'Chic Days',
         imageSrc: '/images/ChicDays.png',
         gitHub: 'https://github.com/AipuAmeh/digital-planner',
