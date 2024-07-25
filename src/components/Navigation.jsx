@@ -18,7 +18,7 @@ function Nav() {
   const currentPage = useLocation().pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg p-4" style={styles.nav}>
+    <nav className="navbar navbar-expand-lg p-2" style={styles.nav}>
       <div className="container-fluid">
         <Link className="navbar-brand" style={styles.brand}>Aipu Ameh</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,17 +57,6 @@ function Nav() {
                 Contact
               </Link>
             </li>
-
-            {/* <li className="nav-item">
-              <Link
-                to="/resume"
-                className={
-                  currentPage === "/resume" ? "nav-link active" : "nav-link"
-                }
-              >
-                Resume
-              </Link>
-            </li> */}
           </ul>
         </div>
       </div>
