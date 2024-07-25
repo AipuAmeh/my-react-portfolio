@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,7 +27,7 @@ export default function Footer() {
                 <li>
                 <Link
                 style={style.link} 
-                to='https://twitter.com/home?lang=en'><FontAwesomeIcon style={style.icon} icon={faTwitter} /></Link>
+                to='https://twitter.com/home?lang=en'><FontAwesomeIcon style={style.icon} icon={faXTwitter} /></Link>
                     </li>
                 <li>
                 <Link 

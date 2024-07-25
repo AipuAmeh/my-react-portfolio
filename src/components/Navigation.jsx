@@ -6,7 +6,7 @@ const styles = {
   },
   navList: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: 'flex-end',
     width: "100%",
   },
   brand: {
@@ -58,7 +58,7 @@ function Nav() {
               </Link>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/resume"
                 className={
@@ -67,7 +67,7 @@ function Nav() {
               >
                 Resume
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
