@@ -1,12 +1,11 @@
 const projects = [
     {
-        name: "Bookipedia",
-        imageSrc: '/images/bookipedia.png',
-        deployedLink: 'https://obelisk477.github.io/bookipedia/',
-        gitHub: 'https://github.com/obelisk477/bookipedia',
-        altText: 'bookipedia homepage',
-        description: 'A collaborative project that utilizes Google Books API to allow users to search for books.',
-        technologies: 'jQuery, Bulma, Wikipedia Api, Google Books API'
+        name: 'Chic Days',
+        imageSrc: '/images/ChicDays.png',
+        gitHub: 'https://github.com/AipuAmeh/digital-planner',
+        altText: 'Chic Days task page',
+        description: 'Chic Days is a minimalistic task application that allows users to create and edit their account and tasks.',
+        technologies: 'Vite, PostgreSQL, Typescript, NestJS, React, ChakraUI '
     },
     {
         name: 'Hype-Hub',
@@ -27,31 +26,13 @@ const projects = [
         technologies: 'Local Storage, Weather API, JavaScript'
     },
     {
-        name: "Fashion Quiz",
-        imageSrc: '/images/fashionquiz3.png',
-        deployedLink: 'https://aipuameh.github.io/coding-quiz/',
-        gitHub: 'https://github.com/AipuAmeh/coding-quiz',
-        altText: 'fashion quiz homepage',
-        description: 'An interactive game that consists of 4 timed questions. After the game, players have the ability to save their initials and see previous scores.',
-        technologies: 'JavaScript, HTML5, CSS'
-    },
-    {
         name: "JATE",
         imageSrc: '/images/JATE.png',
-        deployedLink: 'https://obelisk477.github.io/bookipedia/',
+        deployedLink: 'https://pwa-editor-bc47a30d16dc.herokuapp.com/',
         gitHub: 'https://github.com/obelisk477/bookipedia',
         altText: 'just another text editor',
         description: 'An application that has been transformed into a Progressive Web Application for complete offline use.',
         technologies: 'Web Pack, PWA Apps, Heroku'
-    },
-    {
-        name: "Daily Scheduler",
-        imageSrc: '/images/dailyscheduler.png',
-        deployedLink: 'https://aipuameh.github.io/daily-scheduler/',
-        gitHub: 'https://github.com/AipuAmeh/daily-scheduler',
-        altText: 'daily scheduler',
-        description: 'A dynamic scheduler for a 9 to 5 work day.',
-        technologies: 'JavaScript, jQuery, DayJS'
     },
     {
         name: "Eugenie",
