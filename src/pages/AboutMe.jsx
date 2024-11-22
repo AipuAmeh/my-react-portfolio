@@ -34,6 +34,7 @@ export default function AboutMeCard() {
           <h1 className="intro" style={styles.intro}>
             Hi, my name is Aipu.
           </h1>
+          <p>TESTING GIT FUNCTIONS</p>
           <p className="text-start content mt-3" style={styles.bio}>
             I am a Full Stack Web Developer with a focus on
             visionary technology. I have extensive knowledge in test-centered
